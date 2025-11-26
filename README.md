@@ -57,5 +57,5 @@ This pattern is repeated across many problems to strengthen **problem-solving an
 ---
 
 <p align="center">
-  <b>Author: Prashant Kumar</b>
+  <b>Author: Prashant Todmal</b>
 </p>
