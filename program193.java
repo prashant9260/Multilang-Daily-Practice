@@ -1,36 +1,40 @@
 /*
-    iRow: 6
-    iCol: 6
-    Output:
+    iRow : 4
+    iCol : 4
 
-    Diagonal pattern
-           
-       
+    %   #   #   #
+    *   %   #   #
+    *   *   %   #
+    *   *   *   %
+    
 */
+
 import java.util.Scanner;
-//fileter for square matrix
+
 class Pattern
 {
+    // Filter for square matrix
     public void Display(int iRow, int iCol)
     {
-        int i = 0, j = 0;     
+        int i = 0, j = 0;
 
-        if(iCol != iRow)   
+        if(iRow != iCol)
         {
-            System.out.println("Invalid input......!");
-            System.out.println("Row number and column number should be same...!");
+            System.out.println("Invalid Input");
+            System.out.println("Row number and column number should be same");
+            
             return;
         }
 
         for(i = 1; i <= iRow; i++)
-        {            
-            for(j = 1; j <= iCol; j++)          
+        {         
+            for(j = 1; j <= iCol; j++)
             {
                 if(i == j)
                 {
-                    System.out.print("%\t");       //exception
+                    System.out.print("%\t");   // Exception 
                 }
-                else if(i > j)
+                else if(i  > j)
                 {
                     System.out.print("*\t");
                 }
@@ -43,6 +47,7 @@ class Pattern
         }
     }
 }
+
 class program193
 {
     public static void main(String A[])
@@ -50,13 +55,13 @@ class program193
         Scanner sobj = new Scanner(System.in);
         int iValue1 = 0, iValue2 = 0;
 
-        System.out.println("Enter the number of Rows: ");
+        System.out.println("Enter number of rows : ");
         iValue1 = sobj.nextInt();
 
-        System.out.println("Enter the number of Coumns: ");
+        System.out.println("Enter number of columns : ");
         iValue2 = sobj.nextInt();
 
-        Pattern pboj = new Pattern();
-        pboj.Display(iValue1,iValue2);
+        Pattern pobj = new Pattern();
+        pobj.Display(iValue1, iValue2);
     }
 }

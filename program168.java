@@ -1,13 +1,13 @@
 /*
-    iRow: 4 
-    iCol: 4
-    Output:
+    iRow : 4
+    iCol : 4
 
-        *   *   *   *
-        $   $   $   $
-        *   *   *   *
-        $   $   $   $
+    *   *   *   *
+    $   $   $   $
+    *   *   *   *
+    $   $   $   $
 */
+
 import java.util.Scanner;
 
 class Pattern
@@ -33,6 +33,7 @@ class Pattern
         }
     }
 }
+
 class program168
 {
     public static void main(String A[])
@@ -40,13 +41,13 @@ class program168
         Scanner sobj = new Scanner(System.in);
         int iValue1 = 0, iValue2 = 0;
 
-        System.out.println("Enter the number of Rows: ");
+        System.out.println("Enter number of rows : ");
         iValue1 = sobj.nextInt();
 
-        System.out.println("Enter the number of Coumns: ");
+        System.out.println("Enter number of columns : ");
         iValue2 = sobj.nextInt();
 
-        Pattern pboj = new Pattern();
-        pboj.Display(iValue1,iValue2);
+        Pattern pobj = new Pattern();
+        pobj.Display(iValue1, iValue2);
     }
 }

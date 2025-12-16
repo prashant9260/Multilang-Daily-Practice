@@ -1,8 +1,10 @@
 /*
-    Input: a    b   c   d   e   f
-
-       
+    input : 5
+    output : a  b   c   d   e
+    index :  1  2   3   4   5
+    ASCII :  97 98  99  100 101          
 */
+
 import java.util.Scanner;
 
 class Pattern
@@ -19,6 +21,7 @@ class Pattern
         System.out.println();
     }
 }
+
 class program171
 {
     public static void main(String A[])
@@ -26,10 +29,12 @@ class program171
         Scanner sobj = new Scanner(System.in);
         int iValue = 0;
 
-        System.out.println("Enter the Frequency: ");
+        System.out.println("Enter the frequency : ");
         iValue = sobj.nextInt();
 
-        Pattern pboj = new Pattern();
-        pboj.Display(iValue);
+        Pattern pobj = new Pattern();
+        pobj.Display(iValue);
     }
 }
+
+//only print numbers

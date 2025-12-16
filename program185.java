@@ -1,10 +1,16 @@
 /*
-    iRow: 6
-    iCol: 6
-    Output:
-           
-       
+    iRow : 6
+    iCol : 6
+
+    *   *   *   *   *   *
+    *                   *
+    *                   *
+    *                   *
+    *                   *
+    *   *   *   *   *   *
+    
 */
+
 import java.util.Scanner;
 
 class Pattern
@@ -14,22 +20,23 @@ class Pattern
         int i = 0, j = 0;
 
         for(i = 1; i <= iRow; i++)
-        {            
+        {         
             for(j = 1; j <= iCol; j++)
             {
-                if(i == iRow || (i == 1) || j == 1 || j == iCol)
+                if(i == 1 || i == iRow || j == 1 || j == iCol)
                 {
-                    System.out.print("*\t");
+                    System.out.printf("*\t");
                 }
                 else
                 {
-                    System.out.print(" \t");
+                    System.out.printf(" \t");
                 }
             }
             System.out.println();
         }
     }
 }
+
 class program185
 {
     public static void main(String A[])
@@ -37,13 +44,13 @@ class program185
         Scanner sobj = new Scanner(System.in);
         int iValue1 = 0, iValue2 = 0;
 
-        System.out.println("Enter the number of Rows: ");
+        System.out.println("Enter number of rows : ");
         iValue1 = sobj.nextInt();
 
-        System.out.println("Enter the number of Coumns: ");
+        System.out.println("Enter number of columns : ");
         iValue2 = sobj.nextInt();
 
-        Pattern pboj = new Pattern();
-        pboj.Display(iValue1,iValue2);
+        Pattern pobj = new Pattern();
+        pobj.Display(iValue1, iValue2);
     }
 }

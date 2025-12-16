@@ -1,37 +1,41 @@
 /*
-    iRow: 6
-    iCol: 6
-    Output:
+    iRow : 4
+    iCol : 4
 
+    $   *   *   *
+    *   $   *   *
+    *   *   $   *
+    *   *   *   $
+    
     Diagonal pattern
-           
-       
 */
+
 import java.util.Scanner;
 
 class Pattern
 {
     public void Display(int iRow, int iCol)
     {
-        int i = 0, j = 0;        
+        int i = 0, j = 0;
 
         for(i = 1; i <= iRow; i++)
-        {            
+        {         
             for(j = 1; j <= iCol; j++)
             {
                 if(i == j)
                 {
-                    System.out.print("$\t");
+                    System.out.printf("$\t");
                 }
                 else
                 {
-                     System.out.print("*\t");
+                    System.out.printf("*\t");
                 }
             }
             System.out.println();
         }
     }
 }
+
 class program186
 {
     public static void main(String A[])
@@ -39,13 +43,13 @@ class program186
         Scanner sobj = new Scanner(System.in);
         int iValue1 = 0, iValue2 = 0;
 
-        System.out.println("Enter the number of Rows: ");
+        System.out.println("Enter number of rows : ");
         iValue1 = sobj.nextInt();
 
-        System.out.println("Enter the number of Coumns: ");
+        System.out.println("Enter number of columns : ");
         iValue2 = sobj.nextInt();
 
-        Pattern pboj = new Pattern();
-        pboj.Display(iValue1,iValue2);
+        Pattern pobj = new Pattern();
+        pobj.Display(iValue1, iValue2);
     }
 }
