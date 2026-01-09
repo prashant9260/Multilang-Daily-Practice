@@ -1,1 +1,0 @@
-c cpp and java dont return multiple value of main function
