@@ -1,12 +1,14 @@
+// *    *   *   *   *   
+
 #include<stdio.h>
 
 void Display()
 {
-    int i = 0;
+    int iCnt = 0;
 
-    for(i = 1; i <= 5; i++)
+    for(iCnt = 1; iCnt <= 5; iCnt++)
     {
-        printf("*\t",i);
+        printf("*\t");
     }
 
     printf("\n");

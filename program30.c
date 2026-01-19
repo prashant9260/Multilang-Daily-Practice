@@ -1,14 +1,16 @@
+// 1    2   3   4   5
+
 #include<stdio.h>
 
 void Display()
 {
-    int i = 0;
-    i = 1;
+    int iCnt = 0;
 
-    while( i <= 5)
+    iCnt = 1;
+    while(iCnt <= 5)
     {
-        printf("%d\t",i);
-         i++;
+        printf("%d\t",iCnt);
+        iCnt++;
     }
 
     printf("\n");

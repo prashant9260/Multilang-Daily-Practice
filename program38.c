@@ -1,3 +1,5 @@
+// 1    2   3   4   5
+
 #include<stdio.h>
 
 void Display(int iNo)
@@ -14,9 +16,9 @@ void Display(int iNo)
 
 int main()
 {
-    int iValue = 0;  
+    int iValue = 0;
 
-    printf("Enter the frequecncy: ");
+    printf("Please enter frequency : \n");
     scanf("%d",&iValue);
 
     Display(iValue);

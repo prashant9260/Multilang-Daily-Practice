@@ -1,13 +1,12 @@
 /*
-    START
+    START 
         Accept number and store as no
-        Divide no by 2 
+        Divide no by 2
         If the remainder is 0
             then display as Even
-        otherwise 
-            display as Odd
-    STOP
-
+        Otherwise
+            display as odd
+    Stop
 */
 
 #include<stdio.h>
@@ -20,11 +19,11 @@ void CheckEvenOdd(int iNo)
 
     if(iRem == 0)
     {
-        printf("It is Even number\n");
+        printf("It is Even number \n");
     }
     else
     {
-        printf("It is Odd number\n");
+        printf("It is Odd number \n");
     }
 }
 
